@@ -10,36 +10,36 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/html.html.twig' -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<html lang="es" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
   <head>
     <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
-<meta name="title" content="Teotihuacan: City of Water, City of Fire | famsf-digital-stories" />
+<meta name="title" content="Teotihuacan: Ciudad de Agua, Ciudad de Fuego | famsf-digital-stories" />
 <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="https://digitalstories.famsf.org/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="alternate" hreflang="en" href="../teo.html" />
-<link rel="alternate" hreflang="es" href="../es/teo.html" />
-<link rel="canonical" href="../teo.html" />
-<link rel="shortlink" href="3.html" />
-<link rel="revision" href="../teo.html" />
-<script src="../sites/default/files/google_tag/google_tag.script.js%3Fpmkl1y"></script>
+<link rel="alternate" hreflang="es" href="teo.html" />
+<link rel="canonical" href="teo.html" />
+<link rel="shortlink" href="node/3.html" />
+<link rel="revision" href="teo.html" />
+<script src="../../sites/default/files/google_tag/google_tag.script.js%3Fpmkl1y"></script>
 
-    <title>Teotihuacan: City of Water, City of Fire | famsf-digital-stories</title>
-    <link rel="stylesheet" href="../sites/default/files/css/css_SJtxG8rf4bcvObk9x_BHzNKszSeA9vbwSKf_NNOlLxo.css%3Fpmkl1y.css" media="all" />
-<link rel="stylesheet" href="../sites/default/files/css/css_6J-nONLj1MeSnnBsnmiTfM-sXHQDBG-iVjXoC_5G0-g.css%3Fpmkl1y.css" media="all" />
+    <title>Teotihuacan: Ciudad de Agua, Ciudad de Fuego | famsf-digital-stories</title>
+    <link rel="stylesheet" href="../../sites/default/files/css/css_SJtxG8rf4bcvObk9x_BHzNKszSeA9vbwSKf_NNOlLxo.css%3Fpmkl1y.css" media="all" />
+<link rel="stylesheet" href="../../sites/default/files/css/css_6J-nONLj1MeSnnBsnmiTfM-sXHQDBG-iVjXoC_5G0-g.css%3Fpmkl1y.css" media="all" />
 
     
 <!--[if lte IE 8]>
-<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<script src="../../sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
 <script src="https://use.typekit.net/exo1zov.js"></script>
 
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
         </head>
   <body>
-        <a href="3.html#main-content" class="visually-hidden focusable">
+        <a href="teo.html#main-content" class="visually-hidden focusable">
       Skip to main content
     </a>
     <noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8L875L" height="0" width="0" title="Google Tag Manager">Google Tag Manager</iframe></noscript>
@@ -66,7 +66,7 @@
     <div class="ball"></div>
   </div>
 </div>
-<a href="3.html#" class="dashboard-toggle js-dashboard-toggle js-closed button-with-icon">
+<a href="teo.html#" class="dashboard-toggle js-dashboard-toggle js-closed button-with-icon">
   <i class="icon--med"><?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 33.4 27" style="enable-background:new 0 0 33.4 27;" xml:space="preserve">
@@ -99,7 +99,7 @@
     <div class="dashboard-header">
       <div class="container">
         <div class="l-1up">
-          <a href="3.html#" class="dashboard-close js-dashboard-close button-with-icon">
+          <a href="teo.html#" class="dashboard-close js-dashboard-close button-with-icon">
             <div>Close</div>
             <i class="icon--med"><?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -134,16 +134,16 @@
     <div class="container">
       <div class="l-1up">
 
-                <ul class="dashboard__nav-list" id="myMenu">
-<li class="dashboard__nav-item active" data-menuanchor="start"><a href="3.html#start">Start</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="the-first-city-of-the-americas"><a href="3.html#the-first-city-of-the-americas">The First City of the Americas</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="the-moon-pyramid"><a href="3.html#the-moon-pyramid">The Moon Pyramid</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="the-ciudadela-and-the-feathered-serpent-pyramid"><a href="3.html#the-ciudadela-and-the-feathered-serpent-pyramid">The Ciudadela and the Feathered Serpent Pyramid</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="the-sun-pyramid"><a href="3.html#the-sun-pyramid">The Sun Pyramid</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="apartment-compounds"><a href="3.html#apartment-compounds">Apartment Compounds</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="the-great-fire-and-legacy"><a href="3.html#the-great-fire-and-legacy">The Great Fire and Legacy</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="teotihuacan-in-san-francisco"><a href="3.html#teotihuacan-in-san-francisco">Teotihuacan in San Francisco</a></li>
-<li class="dashboard__nav-item active" data-menuanchor="additional-information"><a href="3.html#additional-information">Additional Information</a></li>
+                <ul class="dashboard_nav-list" id="myMenu">
+  <li class=dashboard__nav-item active" data-menuanchor="start"><a href="teo.html#start">Comienzo</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="la-primera-ciudad-de-las-amricas"><a href="teo.html#la-primera-ciudad-de-las-amricas">La Primera Ciudad de las Américas</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="la-pirmide-de-la-luna"><a href="teo.html#la-pirmide-de-la-luna">La Pirámide de la Luna</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="la-ciudadela-y-la-pirmide-de-la-serpiente-emplumada"><a href="teo.html#la-ciudadela-y-la-pirmide-de-la-serpiente-emplumada">La Ciudadela y la Pirámide de la Serpiente Emplumada</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="la-pirmide-del-sol"><a href="teo.html#la-pirmide-del-sol">La Pirámide del Sol</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="complejos-habitacionales"><a href="teo.html#complejos-habitacionales">Complejos Habitacionales</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="el-gran-fuego-y-la-herencia"><a href="teo.html#el-gran-fuego-y-la-herencia">El Gran Fuego y la Herencia</a></li>
+  <li class=dashboard__nav-item active" data-menuanchor="teotihuacan-en-san-francisco"><a href="teo.html#teotihuacan-en-san-francisco">Teotihuacan en San Francisco</a></li>
+ <li class=dashboard__nav-item active" data-menuanchor="informacin-adicional"><a href="teo.html#informacin-adicional">Información Adicional</a></li>
 </ul>
               </div>
     </div>
@@ -158,13 +158,13 @@
     <div class="container">
       <div class="l-2up">
                 <a class="footer-link" href="https://shop.famsf.org/collections/teotihuacan">
-                    <img data-src="/sites/default/files/2017-09/Teo_pictorial_cover_v2-1.jpg" alt="">
+                    <img data-src="../../sites/default/files/2017-09/Teo_pictorial_cover_v2-1.jpg" alt="">
                     Shop
         </a>
               </div>
       <div class="l-2up">
                 <a class="footer-link" href="https://deyoung.famsf.org/deyoung/visiting/tours-0">
-                    <img data-src="/sites/default/files/2017-08/MENU_Audio.jpg" alt="">
+                    <img data-src="../../sites/default/files/2017-08/MENU_Audio.jpg" alt="">
                     Audio Tours
         </a>
               </div>
@@ -215,14 +215,14 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/node/node--digital-story--full.html.twig' -->
 
 
-<article data-history-node-id="3" role="article" about="/teo">
+<article data-history-node-id="3" role="article" about="/es/teo">
 
     
         
 
         <section class="js-section pp-scrollable" id="start">
-        <div class="site-hero pattern" data-bg="/sites/default/files/2017-08/1_title-page.jpg_2.jpg" style="background-position-y: middle;">
-                        <div class="language-button"><a href="../es/teo.html">ES</a></div>
+        <div class="site-hero pattern" data-bg="../../sites/default/files/2017-08/1_title-page.jpg_2.jpg" style="background-position-y: middle;">
+                        <div class="language-button"><a href="../teo.html">EN</a></div>
                         <div class="site-hero__title--bold animated top-right has-bold-outlined delay-1250">
                                     <div class="delay-3500 animated animated-border--top"></div>
                                 <div class="js-section-hero--get_height animated delay-1250 site-hero__title-text">
@@ -240,13 +240,13 @@
    * field.html.twig
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field--node--title.html.twig' -->
-<span>Teotihuacan: City of Water, City of Fire</span>
+<span>Teotihuacan: Ciudad de Agua, Ciudad de Fuego</span>
 
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field--node--title.html.twig' -->
 
 </h1>
                                         <span class="site-hero__logo animated delay-1500"><a href="https://deyoung.famsf.org/" >de Young Museum</a></span><br />
-                                                              <h2 class="">September 30, 2017–February 11, 2018</h2>
+                                                              <h2 class="">30 de septiembre de 2017 a 11 de febrero de 2018</h2>
                                     </div>
                                                     <div class="delay-3500 animated animated-border--bottom"></div>
                             </div>
@@ -285,13 +285,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="the-first-city-of-the-americas">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="la-primera-ciudad-de-las-amricas">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/Aerial_Sun_Moon_02_0.jpg" style="background-position-y: middle;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/Aerial_Sun_Moon_02_0.jpg" style="background-position-y: middle;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">The First City of the Americas</h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">La Primera Ciudad de las Américas</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -429,7 +429,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Teotihuacan—the massive archaeological site nestled in the northeastern part of the Valley of Mexico</span> conjures visions of enormous pyramids and long avenues surrounded by mountains and volcanoes. But there is more to this place than meets the eye. Within and beneath the city’s many plazas, buildings, and monumental structures lie secrets that are only now coming to light.</p></div>
+            <div><p><span class="wysiwyg-enlarged">Teotihuacan—el enorme sitio arqueológico situado en el noreste del Valle de México</span> conjura visiones de pirámides colosales y largas avenidas rodeadas de montañas y volcanes. Pero aquí hay más de lo que se ve a primera vista. Dentro y debajo de las múltiples plazas, edificios y estructuras monumentales descansan secretos que apenas ahora están saliendo a la luz.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -493,7 +493,7 @@
 <!-- THEME HOOK: 'video_player_formatter' -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
 <video preload="auto"  style="" autoplay loop muted playsinline>
-            <source src="../sites/default/files/video-thumbnails/2017-09/Video&#32;1&#32;general_600_F_0.mp4"/>
+            <source src="../../sites/default/files/video-thumbnails/2017-09/Video&#32;1&#32;general_600_F_0.mp4"/>
     </video>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
@@ -621,7 +621,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-08/1_infographic_pyramid%20size.png" alt="Teotihuacan pyramid size comparison" />
+  <img data-src="../../sites/default/files/2017-08/1_infographic_pyramid%20size.png" alt="Teotihuacan pyramid size comparison" />
   
 </figure>
 
@@ -695,9 +695,9 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Three pyramids—two impressive examples and a smaller third—anchor the center of the ancient city, which dates to around 100 BCE–550 CE. It is difficult for us, in the 21st century, to imagine the sheer human effort it took to construct these grand architectural statements without the use of working animals or metal tools.</p>
+            <div><p>Tres pirámides–dos ejemplos masivos y un tercero más pequeño–anclan el centro de la antigua ciudad, que se remonta al período entre 100 AEC y 500 EC. Es difícil para nosotros en el siglo XXI imaginar el enorme esfuerzo humano requerido para construir estos grandes íconos de la arquitectura sin el uso de animales de carga o herramientas de metal.</p>
 
-<p>At its peak Teotihuacan occupied roughly eight square miles. Archeologists have determined that many groups of people migrated to Teotihuacan around 100 CE, although it is unclear what prompted these relocations. Teotihuacan was the most densely populated city in the ancient Americas, with approximately 100,000 people residing there; it was the cultural, political, economic, and religious center of ancient Mesoamerica.</p></div>
+<p>En su apogeo Teotihuacan ocupaba aproximadamente 20 kilómetros cuadrados (ocho millas cuadradas). Algunos arqueólogos han determinado que hacia 100 EC numerosos grupos de personas migraron a Teotihuacan, aunque no se sabe lo que provocó estas reubicaciones. Teotihuacan fue la ciudad más densamente poblada en la América precolombina con aproximadamente 100,000 habitantes; fue el centro cultural, político, económico y religioso de la antigua Mesoamérica.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -760,9 +760,9 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-zoomable-markers--default.html.twig' -->
 <figure class="figure__zoomable js-figure__zoomable" >
     <div class="figure__zoomable-boundary">
-        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="/sites/default/files/2017-08/2_map-compounds_0.jpg">
+        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="../../sites/default/files/2017-08/2_map-compounds_0.jpg">
         </div>
-        <img style="visibility: hidden;" data-src="/sites/default/files/2017-08/2_map-compounds_0.jpg" alt="Map of Teotihuacan" />
+        <img style="visibility: hidden;" data-src="../../sites/default/files/2017-08/2_map-compounds_0.jpg" alt="Plano de Teotihuacan" />
         
 
 <!-- THEME DEBUG -->
@@ -778,7 +778,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/field/field--paragraph--field-zoomable-area.html.twig' -->
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 45%; top: 20%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -811,12 +811,12 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Ceremonial Core</p></div>
+            <div><p><strong>Centro de Teotihuacan</strong></p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/3_map-center.jpg" alt="" />
+          <img data-src="../../sites/default/files/2017-08/3_map-center.jpg" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -876,7 +876,7 @@
             <span>image credit</span>
         </a>
     </div>
-    <figcaption>                            <p><strong>Map of Teotihuacan</strong></p>
+    <figcaption>                            <p>Plano de Teotihuacan</p>
 
             </figcaption>
 
@@ -941,7 +941,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>This exhibition examines archaeological discoveries from the three main pyramids, all located along the massive Street of the Dead, as well as from several of the many apartment compounds that housed the city’s population.</p></div>
+            <div><p>Esta exposición analiza hallazgos de las tres principales pirámides, todas ubicadas a lo largo de la monumental Calzada de los Muertos, así como de varios de los complejos habitacionales que albergaban a la población de la ciudad.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -1003,7 +1003,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/2_infographic_0.png" alt="Mysteries of Teotihuacan" />
+  <img data-src="../../sites/default/files/2017-09/2_infographic_0.png" alt="Mysteries of Teotihuacan" />
   
 </figure>
 
@@ -1036,7 +1036,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#the-first-city-of-the-americas"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#la-primera-ciudad-de-las-amricas"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -1061,13 +1061,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="the-moon-pyramid">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="la-pirmide-de-la-luna">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/5_Aerial_Moon.jpg" style="background-position-y: middle;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/5_Aerial_Moon.jpg" style="background-position-y: middle;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">The Moon Pyramid</h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">La Pirámide de la Luna</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -1205,7 +1205,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Why was such a large population attracted to Teotihuacan?</span> A modest temple constructed at the very beginning of Teotihuacan’s history, at around 50 to 100 CE, suggests a powerful religion may have attracted many groups of people from the surrounding areas. Over the centuries, this temple was enlarged and became a massive pyramid, standing over 151 feet tall. Now known as the Moon Pyramid, it is the second-largest monument at Teotihuacan.</p></div>
+            <div><p><span class="wysiwyg-enlarged">¿Qué fue lo que atrajo a una población tan numerosa a Teotihuacan?</span> Un templo modesto construido a los inicios de la historia de Teotihuacan (aproximadamente 50-100 EC) sugiere que una religión poderosa podría haber atraído a muchos grupos de personas de las áreas circundantes. A través de los siglos se amplió este templo resultando en una pirámide de más de 42 metros (137 pies) de altura. De los monumentos de Teotihuacan es el segundo en tamaño. Hoy se le conoce como la Pirámide de la Luna.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -1248,7 +1248,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/Header-2-detail.jpg" alt="The Moon Pyramid at Teotihuacan" />
+  <img data-src="../../sites/default/files/2017-09/Header-2-detail.jpg" alt="The Moon Pyramid at Teotihuacan" />
   
 </figure>
 
@@ -1308,7 +1308,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/4_Moon-Pyramid.jpg" alt="View of the Moon Pyramid looking north, with the peak of Cerro Gordo in the background" />
+  <img data-src="../../sites/default/files/2017-09/4_Moon-Pyramid.jpg" alt="View of the Moon Pyramid looking north, with the peak of Cerro Gordo in the background" />
   
 
 <!-- THEME DEBUG -->
@@ -1421,11 +1421,11 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>During one period of the Moon Pyramid’s expansion, around 250 CE, the structure was greatly enlarged, indicating a period of increasing wealth and political centralization in the city.</p>
+            <div><p>Durante una etapa de expansión de la Pirámide de la Luna, hacia 250 EC, se incrementó significativamente la estructura, lo cual revela un período de mayor riqueza y centralización política en la ciudad.</p>
 
-<p>Elaborate buried offerings were made at the dedication of this larger pyramid. Placed in each burial were carefully arranged groups of greenstone and obsidian sculptures, slate, pyrite, and ceramic objects. Human and animal skeletons were also found in many of the Moon Pyramid burials.</p>
+<p>Elaboradas ofrendas fueron enterradas durante la dedicación de esta pirámide una vez acrecentada. En cada entierro se colocaron grupos cuidadosamente arreglados de esculturas de piedra verde y obsidiana y objetos de pizarra, pirita y cerámica. También se encontraron esqueletos humanos y de animales en muchos de los entierros de la Pirámide de la Luna.</p>
 
-<p>At the center of each offering were human figures, like those shown here, made from obsidian and greenstone. By examining the materials used to create these figures we can begin to answer some questions about the city.</p></div>
+<p>En el centro de cada entierro había figuras humanas, como las que se exhiben aquí, hechas de obsidiana y piedra verde. Al examinar los materiales que se emplearon en la creación de estas figuras, podemos comenzar a responder a algunas de las incógnitas concernientes a esta ciudad.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -1488,7 +1488,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--comparison-image.html.twig' -->
                             
-<img data-src="/sites/default/files/2017-09/6_Obsidian_Cutout_V4.png" alt="" />
+<img data-src="../../sites/default/files/2017-09/6_Obsidian_Cutout_V4.png" alt="" />
 <div class="comparison__answer js-comparison__answer js-comparison__answer--is-closed ">
             <div class="figcaption__wrapper animated delay-1000">
             <a class="figcaption-cta js-figcaption-cta">
@@ -1555,7 +1555,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Obsidian is the glass that results from the violent heat and eventual cooling of volcanic lava. It has been used for thousands of years as a cutting tool. In ancient times it was a highly valuable trade commodity. Obsidian played a crucial role in the establishment of the Teotihuacan state. The early city leaders gained control over obsidian deposits in the area and organized work crews to acquire the raw material. They oversaw the artisans who carved it into utilitarian blades and elaborate figures as well at the local and long-distance trade of the material.</p></div>
+            <div><p>La obsidiana es un vidrio que resulta del calor violento y el enfriamiento eventual de la lava volcánica. Desde hace miles de años se usa como herramienta de corte. En la antigüedad fue un muy valioso objeto de comercio. La obsidiana jugó un papel crítico en el establecimiento del estado de Teotihuacan. Los primeros líderes de la ciudad acapararon los depósitos regionales de obsidiana y organizaron grupos de trabajo para obtener la materia prima. También supervisaron tanto a los artistas que tallaron los cuchillos y figuras decorativas como al comercio local y foráneo.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -1574,7 +1574,7 @@
 </i>
     <i class="icon-arrow--up js-icon-arrow--up" style="display:none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.13 18"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1px;}</style></defs><polygon points="17.56 9.2 24.12 15.53 30.67 15.53 17.56 2.87 4.46 15.53 11.01 15.53 17.56 9.2"/><path class="cls-2" d="M29.05,11.93,18.58,1.82l-1-1h0l-1,1M4.46,17H11.6l.43-.41,5.53-5.34,2.59,2.5"/></svg>
 </i>
-    Obsidian
+    Obsidiana
 </button>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--comparison-image.html.twig' -->
@@ -1617,7 +1617,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--comparison-image.html.twig' -->
                             
-<img data-src="/sites/default/files/2017-09/7_Jade_Cutout_V4.png" alt="" />
+<img data-src="../../sites/default/files/2017-09/7_Jade_Cutout_V4.png" alt="" />
 <div class="comparison__answer js-comparison__answer js-comparison__answer--is-closed ">
             <div class="figcaption__wrapper animated delay-1000">
             <a class="figcaption-cta js-figcaption-cta">
@@ -1684,7 +1684,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Jade and greenstone were extremely valuable materials for the ancient Teotihuacanos. Many of these precious stones came from afar, imported along Teotihuacan’s vast supply of trade networks. They were prized for their color, which symbolically represented maize and agricultural fertility. The success of the maize crop was crucial to the survival of the city and to the position of its ruling elite. Early Teotihuacanos were able to efficiently farm maize by rerouting water sources and developing complex irrigation systems to produce a supply of food adequate for a large population.</p></div>
+            <div><p>El jade y la piedra verde fueron materiales extremadamente valiosos para los antiguos teotihuacanos. Muchas de estas piedras preciosas llegaron desde muy lejos a través de las vastas redes mercantiles de Teotihuacan. Las apreciaban por su color, que simbólicamente representaba el maíz y la fertilidad agrícola. El éxito de la cosecha de maíz fue crítico para la supervivencia de la ciudad y para el prestigio de la élite gobernante. Los primeros teotihuacanos criaron el maíz de manera muy eficiente, aprovechando la canalización de fuentes de agua y desarrollando complejos sistemas de irrigación. De esta forma lograron proveer suficientes alimentos para una población muy grande.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -1736,7 +1736,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#the-moon-pyramid"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#la-pirmide-de-la-luna"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -1761,13 +1761,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="the-ciudadela-and-the-feathered-serpent-pyramid">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="la-ciudadela-y-la-pirmide-de-la-serpiente-emplumada">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/10_FS-Pyramid.jpg" style="background-position-y: top;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/10_FS-Pyramid.jpg" style="background-position-y: top;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">The Ciudadela and the Feathered Serpent Pyramid</h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">La Ciudadela y la Pirámide de la Serpiente Emplumada</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -1818,7 +1818,7 @@
             <span>image credit</span>
         </a>
     <div class="figcaption js-figcaption--hidden">
-                                    <p>View of the facade of the Feathered Serpent Pyramid, assembled as a mosaic of large and small sculptures. Photograph by Jorge Pérez de Lara Elías, © INAH</p>
+                                    <p><em>Teotihuacan: City of Water, City of Fire</em>&nbsp;(clip), 2017. Produced by the Los Angeles County Museum of Art, the Instituto Nacional de Antropología e Historia of Mexico (INAH), and the Fine Arts Museums of San Francisco&nbsp;© 2017 Museum Associates / LACMA and INAH</p>
 
             </div>
 
@@ -1905,9 +1905,9 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">The Feathered Serpent Pyramid is the third-largest building in Teotihuacan.</span> It takes its name from the undulating serpents carved into its sides. It is situated in a plaza known as the Ciudadela (“Citadel”), a place for Teotihuacanos to gather and engage in large public rituals.</p>
+            <div><p><span class="wysiwyg-enlarged">La Pirámide de la Serpiente Emplumada es la tercera estructura en tamaño en Teotihuacan.</span> Su nombre proviene de las serpientes ondulantes talladas en sus costados. Se encuentra en la plaza conocida como la Ciudadela, un lugar donde los teotihuacanos se reunían y llevaban a cabo grandes rituales públicos.</p>
 
-<p>The Feathered Serpent Pyramid is enclosed in the Ciudadela, which consists of fifteen stepped platforms surrounding an enormous sunken plaza. Archaeologists have found evidence that the immense plaza may have been periodically flooded in rituals that turned it into a simulacrum of the primordial sea. The Feathered Serpent Pyramid thus symbolically became the sacred mountain that, in Mesoamerican creation narratives, emerged from the primordial sea to begin time. Time and the ancient Mesoamerican calendar were cyclical and required renewal through ceremony. The Ciudadela may have been the site of massive ceremonies held to appease the gods and also to remind Teotihuacan’s populace of the leaders’ divine right to exercise authority under the auspices of the Feathered Serpent.</p></div>
+<p>La Ciudadela rodea a la Pirámide de la Serpiente Emplumada y consiste en quince plataformas escalonadas alrededor de una enorme plaza hundida. Los arqueólogos han encontrado evidencias de que la inmensa plaza puede haber sido inundada periódicamente en ritos que la convertían en un simulacro del mar primordial. La Pirámide de la Serpiente Emplumada simbólicamente se convertía en la montaña sagrada que, según la narrativa mesoamericana de la creación, emergió del mar primordial para empezar el tiempo. El tiempo y el antiguo calendario mesoamericano eran considerados como cíclicos y requerían de renovación ceremonial. La Ciudadela podría haber sido el sitio de ceremonias masivas para el apaciguamiento de los dioses y para recordar a la población del derecho divino de los líderes de ejercer su autoridad bajo los auspicios de la Serpiente Emplumada.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -1950,7 +1950,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/header-3-detail.jpg" alt="The Feathered Serpent Pyramid at Teotihuacan" />
+  <img data-src="../../sites/default/files/2017-09/header-3-detail.jpg" alt="The Feathered Serpent Pyramid at Teotihuacan" />
   
 </figure>
 
@@ -2031,7 +2031,7 @@
 <!-- THEME HOOK: 'video_player_formatter' -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
 <video preload="auto"  style="" autoplay loop muted playsinline>
-            <source src="../sites/default/files/video-thumbnails/2017-08/3_video_ciudadela.mp4"/>
+            <source src="../../sites/default/files/video-thumbnails/2017-08/3_video_ciudadela.mp4"/>
     </video>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
@@ -2173,7 +2173,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">In 2003, Mexican archaeologists discovered a large tunnel,</span> the length of a football field, running west to east underneath the Ciudadela and the Feathered Serpent Pyramid. This tunnel was made early in Teotihuacan’s history, around 100 CE, before the construction of the pyramid above.</p></div>
+            <div><p><span class="wysiwyg-enlarged">En 2003, arqueólogos mexicanos descubrieron un gran túnel </span>del largo de una cancha de futbol, que corría de occidente a oriente debajo de la Ciudadela y la Pirámide de la Serpiente Emplumada. Este túnel se construyó en los inicios de la historia de Teotihuacan, hacia 100 EC, antes de la construcción de la pirámide.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -2215,7 +2215,7 @@
 <!-- THEME HOOK: 'video_player_formatter' -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
 <video preload="auto"  style="" autoplay loop muted playsinline>
-            <source src="../sites/default/files/video-thumbnails/2017-09/Video&#32;2&#32;tunnel_1200_F_2.mp4"/>
+            <source src="../../sites/default/files/video-thumbnails/2017-09/Video&#32;2&#32;tunnel_1200_F_2.mp4"/>
     </video>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
@@ -2357,7 +2357,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>A decade of explorations in the tunnel has yielded an astonishing array of objects notable for both their complexity and quantity. Research and interpretation of the site and these finds is ongoing, but it has allowed scholars to establish that the tunnel was manmade and to propose dates for key events. The tunnel was apparently sealed and re-entered on multiple occasions between the time it was first made and its permanent closure (around 250 CE, which coincides with the construction of the Feathered Serpent Pyramid). Evidence supports its interpretation as a representation of the cosmic underworld—a sacred space below ground that connects with our understanding of the ceremonial space above as a site for re-creating narratives on the origin of the universe.</p></div>
+            <div><p>Una década de exploraciones en el túnel ha resultado en una amplia gama de objetos notables tanto por su complejidad como por su cantidad. La investigación e interpretación de sitio y los hallazgos continúan, pero han permitido a los investigadores establecer que el túnel es obra humana y proponer fechas de eventos clave. Aparentemente el túnel fue sellado y reabierto en múltiples ocasiones entre el tiempo de su construcción y la clausura definitiva (hacia 250 EC que coincide con la construcción de la Pirámide de la Serpiente Emplumada). La evidencia apoya la interpretación de que se trataba de una representación del inframundo –un espacio sagrado subterráneo que coincide con nuestra impresión del espacio ceremonial encima como un sitio para recrear las narrativas del origen del universo.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -2400,7 +2400,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-08/8_tunnel-explo_0.jpg" alt="Detail of the Teotihuacan tunnel’s exploration" />
+  <img data-src="../../sites/default/files/2017-08/8_tunnel-explo_0.jpg" alt="Detail of the Teotihuacan tunnel’s exploration" />
   
 
 <!-- THEME DEBUG -->
@@ -2518,7 +2518,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/In-situ.jpg" alt="Two standing anthropomorphic sculptures in a tunnel under the Feathered Serpent Pyramid" />
+  <img data-src="../../sites/default/files/2017-09/In-situ.jpg" alt="Two standing anthropomorphic sculptures in a tunnel under the Feathered Serpent Pyramid" />
   
 
 <!-- THEME DEBUG -->
@@ -2631,9 +2631,9 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>In ancient Mesoamerican cosmology, tunnels provide access to the underworld, seen as an aquatic place filled with riches and nourishing seeds; inhabited by deities and creative forces responsible for maintaining order in the universe. Archaeologists found that the walls of the tunnel sparkled; they had been dusted with the reflective mineral pyrite. The dazzling walls recreated the shimmering environs of a cosmic place.</p>
+            <div><p>En la cosmología mesoamericana, los túneles proporcionaban el acceso al inframundo, considerado un lugar acuático lleno de riquezas y semillas nutritivas; habitado por deidades y fuerzas creativas responsables de mantener el orden en el universo. Los arqueólogos han encontrado que las paredes del túnel brillaban; habían sido espolvoreadas con pirita, un mineral reflejante de la luz. Las paredes deslumbrantes recreaban el ambiente reluciente de un lugar cósmico.</p>
 
-<p>More than 50,000 objects were deposited as offerings in the tunnel; the wealth of offerings attests to the sacred nature of what might be the most important ritual space in Teotihuacan.</p></div>
+<p>Se depositaron más de 50,000 ofrendas en el túnel; la riqueza de las ofrendas es testigo de la naturaleza sagrada de lo que posiblemente fuera el espacio ritual más importante en Teotihuacan.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -2694,7 +2694,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9a_standing-figure.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9a_standing-figure.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -2745,7 +2745,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9b_standing-figure.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9b_standing-figure.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -2796,7 +2796,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9c_Standing-Figure-Side-View-37.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9c_Standing-Figure-Side-View-37.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -2847,7 +2847,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9d_Standing-Figure.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9d_Standing-Figure.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -2898,7 +2898,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9e_Standing-Figure-40.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9e_Standing-Figure-40.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -2949,7 +2949,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9f_Incised-Shell.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9f_Incised-Shell.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -3000,7 +3000,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9g_effigy-46.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9g_effigy-46.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -3051,7 +3051,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/9h_Storm-God-50.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/9h_Storm-God-50.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -3095,12 +3095,12 @@
   </ul>
   <div class="horizontal-slider-controls">
     <div class="horizontal-slider-controls-direction">
-      <a class="horizontal-slider-prev" href="3.html#">
+      <a class="horizontal-slider-prev" href="teo.html#">
         <span class="icon--med">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.12 27"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><polygon points="7.6 12.69 13.7 6.38 13.7 0.08 1.51 12.69 13.7 25.31 13.7 19 7.6 12.69"/><path class="cls-2" d="M9.57,12.69l5.15-5.33.4-.41V.08M.49,13.68l4.1,4.24,8.09,8.38"/></svg>
 </span>
       </a>
-      <a class="horizontal-slider-next" href="3.html#">
+      <a class="horizontal-slider-next" href="teo.html#">
         <span class="icon--med">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.61 27"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><polygon points="9.03 13.5 2.91 19.83 2.91 26.17 15.15 13.5 2.91 0.83 2.91 7.17 9.03 13.5"/><path class="cls-2" d="M6.39,24.61l9.77-10.12,1-1h0l-1-1M1.49.83V7.74l.4.41L7.06,13.5,4.64,16"/></svg>
 </span>
@@ -3154,9 +3154,9 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-zoomable-markers--default.html.twig' -->
 <figure class="figure__zoomable js-figure__zoomable" >
     <div class="figure__zoomable-boundary">
-        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="/sites/default/files/2017-09/infographic-3a_0.png">
+        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="../../sites/default/files/2017-09/infographic-3a_0.png">
         </div>
-        <img style="visibility: hidden;" data-src="/sites/default/files/2017-09/infographic-3a_0.png" alt="Tunnels below the Ciudadela and the Feathered Serpent Pyramid" />
+        <img style="visibility: hidden;" data-src="../../sites/default/files/2017-09/infographic-3a_0.png" alt="Tunnels below the Ciudadela and the Feathered Serpent Pyramid" />
         
 
 <!-- THEME DEBUG -->
@@ -3172,7 +3172,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/field/field--paragraph--field-zoomable-area.html.twig' -->
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 75%; top: 80%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -3205,12 +3205,12 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Near the tunnel’s final chamber, directly beneath the center of the Feathered Serpent Pyramid is an offering believed to mark the axis mundi, a symbolic pillar connecting heaven, earth, and underworld as well as the meeting place of the four compass directions. This offering contained four enigmatic sculptures, some apparently carrying bags of greenstone objects and iron-ore mirrors and discs, suggesting a deeper, more ritual significance. They may represent Teotihuacan’s founding ancestors, witnesses to the birth of time.</p></div>
+            <div><p>Cerca de la cámara final del túnel, directamente debajo del centro de la Pirámide de la Serpiente Emplumada se encuentra una ofrenda que se cree marca el axis mundi, un pilar simbólico que conecta el cielo, la tierra y el inframundo a la vez de ser el punto de reunión de los cuatro puntos cardinales. Esta ofrenda contenía cuatro enigmáticas esculturas, unas bolsas con objetos de piedra verde, y espejos y discos de hematita, sugiriendo un significado más profundo y más ritual. Es posible que representen a los ancestros fundadores de Teotihuacan, testigos del nacimiento del tiempo.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-09/infographic-3b.png" alt="" />
+          <img data-src="../../sites/default/files/2017-09/infographic-3b.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -3242,7 +3242,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--audio-component.html.twig' -->
 <div class="js-audio__wrapper audio__wrapper">
     <audio class="js-audio__source">
-        <source src="../sites/default/files/2017-09/1_audio_robb.mp3" type="audio/mpeg">
+        <source src="../../sites/default/files/2017-09/1_audio_Robb_Spn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -3269,7 +3269,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div>Listen to Matthew Robb, Curator</div>
+            <div>Para escuchar a Matthew Robb, Curador</div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -3279,7 +3279,7 @@
 <div class="audio-transcript">
     <button class="audio-transcript--trigger js-audio-transcript--trigger">Audio Transcript</button>
     <div class="audio-transcript__drawer js-audio-transcript--hidden" aria-hidden="true">
-        <p>If you’re looking at a human figure and its eyes are open ... the eyes have traces of other inlaid materials ... to represent the pupil and iris.... These objects are very much thought to be alive, and not just imagined to be alive, made to be alive by the addition of these other materials. </p>
+        <p>Si mira a una figura humana que tiene los ojos abiertos … los ojos tienen vestigios de otros materiales incrustados … para representar la pupila y el iris. … Consideraban que estos objetos estaban vivos, y no solamente imaginados como vivos, dándoles vida mediante la adición de estos materiales.</p>
     </div>
 </div>
 
@@ -3339,7 +3339,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/10_FS-Pyramid_sq_detail.jpg" alt="View of the facade of the Feathered Serpent Pyramid, assembled as a mosaic of large and small sculptures (detail)" />
+  <img data-src="../../sites/default/files/2017-09/10_FS-Pyramid_sq_detail.jpg" alt="View of the facade of the Feathered Serpent Pyramid, assembled as a mosaic of large and small sculptures (detail)" />
   
 
 <!-- THEME DEBUG -->
@@ -3452,11 +3452,11 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>The size of the Feathered Serpent Pyramid is not extraordinary in comparison to the Sun and Moon Pyramids, but all four sides were covered in luxurious and monumental carvings that represent the highest expenditure of energy among all of the sculptural programs in Teotihuacan, signifying the structure’s importance.</p>
+            <div><p>El tamaño de la Pirámide de la Serpiente Emplumada no llama la atención en comparación con las Pirámides del Sol y de la Luna, pero los cuatro costados fueron cubiertos de lujosos tallados monumentales que representan el mayor esfuerzo de todos los programas esculturales de Teotihuacan, y demuestran la importancia de la estructura.</p>
 
-<p>The facade depicts undulating serpents with heads that are surrounded by wreaths of feathers. The serpents’ bodies support facelike elements that appear to be headdresses, with nose pendants carved under the upper jaw. These images may represent a primordial crocodile, a symbol that was later used by the Aztecs as a calendar sign to mark the beginning of a new era.</p>
+<p>La fachada muestra serpientes ondulantes con cabezas rodeadas de coronas de plumas. Los cuerpos de las serpientes soportan a elementos que parecen ser tocados, de tipo facial, con narigueras talladas debajo de la mandíbula superior. Estas imágenes podrían representar a un cocodrilo primordial, un símbolo posteriormente utilizado por los aztecas como un signo calendárico para marcar el principio de una nueva era.</p>
 
-<p>Approximately 100 years after it was built, the western facade of the Feathered Serpent Pyramid was covered over by an additional construction and the sculptures on the other three sides of the pyramid were deliberately damaged or removed. Scholars are still unsure as to what political event led to this destruction. These two carvings from the façade were found on different sides of the pyramid’s base.</p></div>
+<p>Aproximadamente cien años después de que se construyó, la fachada occidental de la Pirámide de la Serpiente Emplumada fue cubierta por una construcción nueva y las esculturas de los otros tres costados de la pirámide fueron dañadas o removidas deliberadamente. Los expertos todavía no han podido descifrar a ciencia cierta qué evento político derivó en esta destrucción. Estos dos tallados se encontraron en diferentes lados de la base de la pirámide.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -3518,7 +3518,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/12_FS-square_Cutout.png" alt="Sculpture Fragment, 200–250" />
+  <img data-src="../../sites/default/files/2017-09/12_FS-square_Cutout.png" alt="Sculpture Fragment, 200–250" />
   
 
 <!-- THEME DEBUG -->
@@ -3617,7 +3617,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/13_FS-head_Cutout.png" alt="Feathered Serpent Head, 200–250" />
+  <img data-src="../../sites/default/files/2017-09/13_FS-head_Cutout.png" alt="Feathered Serpent Head, 200–250" />
   
 
 <!-- THEME DEBUG -->
@@ -3762,7 +3762,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-08/14_Feathered-Serpents-and-Flowering-Trees-Mural.jpg" alt="Feathered Serpents and Flowering Trees mural (Feathered Serpent 1), 500–550" />
+  <img data-src="../../sites/default/files/2017-08/14_Feathered-Serpents-and-Flowering-Trees-Mural.jpg" alt="Feathered Serpents and Flowering Trees mural (Feathered Serpent 1), 500–550" />
   
 
 <!-- THEME DEBUG -->
@@ -3853,9 +3853,9 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">The entire facade of the Feathered Serpent Pyramid was originally colored with green and red pigment</span> and may have resembled this mural of a feathered serpent from an apartment compound near the ceremonial center of the city. This mural represents a similar plumed snake that embodied the union of earth and sky. Notice the water emerging from the serpent’s mouth that seems to nourish the plants below.</p>
+            <div><p><span class="wysiwyg-enlarged">Originalmente toda la fachada de la Pirámide de la Serpiente Emplumada estuvo coloreada con pigmentos verde y rojo</span> y puede haberse aparecido a este mural de una serpiente emplumada en un complejo habitacional cerca del centro ceremonial de la ciudad. Este mural representa a una serpiente emplumada que encarnaba la unión de tierra y cielo. Es de notar el agua que fluye de la boca de la serpiente y parece nutrir a las plantas abajo.</p>
 
-<p>The murals of Teotihuacan decorated many of the city’s apartments and administrative centers; they reiterated the dominant ideology of the city. The red backgrounds on most murals place them in cosmic time and the sacred world. Sparkling minerals, hematite and pyrite, were mixed into the paint which was placed directly on a wet surface of stucco and then burnished, creating a durable surface that can last for centuries. These shiny surfaces would have been activated by light reflected from shallow pools in the compounds’ central patios. In this way the murals, like the sparkling tunnel buried beneath the Feathered Serpent Pyramid, recreated the physical environment of supernatural realms.</p></div>
+<p>Los murales de Teotihuacan decoraban muchos de los conjuntos habitacionales y centros administrativos; reiteraban la ideología dominante de la ciudad. Los fondos rojos en la mayoría de los murales los sitúan en el tiempo cósmico y en el mundo sagrado. Mezclaban minerales relucientes, hematita y pirita, con la pintura que se extendía sobre una superficie de estuco húmedo y que luego se bruñía para crear una superficie resistente, capaz de durar por siglos. Estas superficies brillantes se activaban por la luz reflejada en los estanques localizados en los patios centrales de los complejos. De esta manera los murales, así como el túnel debajo de la Pirámide de la Serpiente Emplumada, recreaban el ambiente físico de los dominios sobrenaturales.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -3881,8 +3881,8 @@
 
         </div>
         <div class="container">
-            <button class="button-with-icon js-icon--read-more" data-text-collapsed="Feathered serpents throughout the city" data-text-expanded="Feathered serpents throughout the city">
-                <div class="button-with-icon__text" >Feathered serpents throughout the city</div>  
+            <button class="button-with-icon js-icon--read-more" data-text-collapsed="Conviviendo con los dioses—aprender más sobre la Serpiente Emplumada" data-text-expanded="Conviviendo con los dioses—aprender más sobre la Serpiente Emplumada">
+                <div class="button-with-icon__text" >Conviviendo con los dioses—aprender más sobre la Serpiente Emplumada</div>  
                 <i class="js-icon-arrow--plus icon--xsmall">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.13 18"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1px;}</style></defs><polygon points="16.99 9.23 9.58 2.08 2.17 2.08 16.99 16.39 31.81 2.08 24.4 2.08 16.99 9.23"/><path class="cls-2" d="M17,6.93l-6.26-6L10.25.42H2.17m16,17.17,5-4.81L33,3.27"/></svg>
 
@@ -3913,7 +3913,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#the-ciudadela-and-the-feathered-serpent-pyramid"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#la-ciudadela-y-la-pirmide-de-la-serpiente-emplumada"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -3938,13 +3938,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="the-sun-pyramid">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="la-pirmide-del-sol">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/Sun_Pyramid2.jpg" style="background-position-y: middle;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/Sun_Pyramid2.jpg" style="background-position-y: middle;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">The Sun Pyramid</h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">La Pirámide del Sol</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -4082,7 +4082,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">The Sun Pyramid dominates the center of the city.</span> It is Teotihuacan’s most massive monument, and one of the largest ever built in the ancient world. The structure was built in one single, massive effort around 200 CE. Its square plan covers roughly 60,000 square yards, and it rises 200 feet high, making it one of the tallest buildings in the Western Hemisphere until the advent of the modern skyscraper.</p></div>
+            <div><p><span class="wysiwyg-enlarged">La Pirámide del Sol domina el centro de la ciudad.</span> Es el monumento más grande de Teotihuacan y uno de los más grandes de todo el mundo antiguo. La estructura se construyó en un solo esfuerzo masivo alrededor de 200 EC. La planta cuadrada cubre 49,943 metros cuadrados (aproximadamente 60,000 yardas cuadradas) y se eleva a 63.5 metros (200 pies) de altura, siendo uno de los edificios más altos del hemisferio occidental antes de advenimiento del rascacielos moderno.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -4125,7 +4125,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/header-4-detail.jpg" alt="The Sun Pyramid at Teotihuacan" />
+  <img data-src="../../sites/default/files/2017-09/header-4-detail.jpg" alt="The Sun Pyramid at Teotihuacan" />
   
 </figure>
 
@@ -4186,9 +4186,9 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-zoomable-markers--default.html.twig' -->
 <figure class="figure__zoomable js-figure__zoomable" >
     <div class="figure__zoomable-boundary">
-        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="/sites/default/files/2017-08/15_Fire-God_28_cutout.png">
+        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="../../sites/default/files/2017-08/15_Fire-God_28_cutout.png">
         </div>
-        <img style="visibility: hidden;" data-src="/sites/default/files/2017-08/15_Fire-God_28_cutout.png" alt="Old Fire God, 150–550" />
+        <img style="visibility: hidden;" data-src="../../sites/default/files/2017-08/15_Fire-God_28_cutout.png" alt="Old Fire God, 150–550" />
         
 
 <!-- THEME DEBUG -->
@@ -4204,7 +4204,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/field/field--paragraph--field-zoomable-area.html.twig' -->
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 30%; top: 10%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -4237,14 +4237,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Basin Brazier</span></p>
+            <div><p><span class="wysiwyg-enlarged">Bracero</span></p>
 
-<p>The figure is burdened with a brazier atop his head. Burn marks indicate that it was most likely used for ceremonial incense burning. Communal ceremonies played a large role in binding the citizenry together.</p></div>
+<p>Esta figura sostiene un bracero en la cabeza. Vestigios de fuego indican que probablemente servía para quemar incienso ceremonial. Las ceremonias comunales jugaban un papel muy importante en el fomento de vínculos entre los ciudadanos.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/15_Fire-God_28_cutout_A.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/15_Fire-God_28_cutout_A.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -4254,7 +4254,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 20%; top: 75%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -4287,14 +4287,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Volcanic Stone</span></p>
+            <div><p><span class="wysiwyg-enlarged">Piedra Volcánica</span></p>
 
-<p>The Old Fire God is usually represented in volcanic stone, suggesting a specific connection between the deity and the smoldering volcanoes surrounding the Valley of Mexico.</p></div>
+<p>El Dios Viejo del Fuego se representa comúnmente en piedra volcánica, lo cual sugiere una conexión específica entre la deidad y los volcanes humeantes que rodean el valle de México.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/15_Fire-God_28_cutout_B.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/15_Fire-God_28_cutout_B.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -4304,7 +4304,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 70%; top: 50%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -4337,14 +4337,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Earflares</span></p>
+            <div><p><span class="wysiwyg-enlarged">Orejeras</span></p>
 
-<p>The old man wears rounded earflares, probably representing an association with the precious materials these accessories were usually made from, jade or greenstone, and indicating his links to the elite.</p></div>
+<p>El viejo luce orejeras redondas que representan una asociación con los materiales preciosos, jade o piedra verde, de los que usualmente se hacían estos accesorios y que indican su vínculo con la élite.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/15_Fire-God_28_cutout_C.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/15_Fire-God_28_cutout_C.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -4469,9 +4469,9 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Archaeologists believe that the Sun Pyramid supported a temple on its summit, which housed this large stone carving of an elderly, cross-legged figure with a brazier atop his head. This represents the <span class="wysiwyg-enlarged">Old Fire God</span>. Fire was an essential force that both powered and threatened the city; it required careful management. The art of Teotihuacan represents manifestations of natural forces and the beings and rituals designed to keep these elements in cosmic balance.</p>
+            <div><p>Según los arqueólogos, la Pirámide del Sol tenía un templo en su cima que albergaba este gran tallado de piedra de una figura de un anciano con las piernas cruzadas y un bracero sobre la cabeza. Este representa al <span class="wysiwyg-enlarged">Dios Viejo del Fuego</span>. El fuego era una fuerza esencial que tanto movía como amenazaba a la ciudad; requería ser manejado con precaución. El arte de Teotihuacan representa manifestaciones de fuerzas naturales y los seres y ritos diseñados para mantener estos elementos en equilibrio cósmico.</p>
 
-<p>The Old Fire God also played an important role in unifying the city. Earlier versions of this deity appeared in central and western Mexico and Oaxaca in advance of Teotihuacan’s rise. With the rapid influx of people from these areas early in the city’s history, and with the challenge of unifying such diverse populations, city leaders appear to have taken advantage of this deity-in-common, the Old Fire God. Teotihuacano modifications of the earlier traditions helped to bind the many different ethnic groups together. More than 100 Old Fire God figures have been found throughout the city, in locations reflecting both high and low status of its residents.</p></div>
+<p>El Dios Viejo del Fuego también tuvo un papel importante en la unificación de la ciudad. Algunas versiones tempranas de este dios aparecieron en el centro y occidente de México y en Oaxaca antes del surgimiento de Teotihuacan. Con la rápida afluencia de personas de estas áreas en el amanecer de la historia de la ciudad, y con el reto de unificar a poblaciones tan diversas, los líderes municipales parecen haber tomado ventaja de esta deidad en común, el Dios Viejo del Fuego. Las modificaciones al estilo teotihuacano de las tradiciones anteriores ayudaron a consolidar a los muchos y diversos grupos étnicos. Se han encontrado más de 100 figuras del Dios Viejo del Fuego en toda la ciudad, en sitios que reflejan tanto niveles sociales altos como humildes.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -4493,7 +4493,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--audio-component.html.twig' -->
 <div class="js-audio__wrapper audio__wrapper">
     <audio class="js-audio__source">
-        <source src="../sites/default/files/2017-09/2_audio_robb.mp3" type="audio/mpeg">
+        <source src="../../sites/default/files/2017-09/2_audio_Robb_Spn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -4520,7 +4520,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div>Listen to Matthew Robb, Curator</div>
+            <div>Para escuchar a Matthew Robb, Curador</div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -4530,7 +4530,7 @@
 <div class="audio-transcript">
     <button class="audio-transcript--trigger js-audio-transcript--trigger">Audio Transcript</button>
     <div class="audio-transcript__drawer js-audio-transcript--hidden" aria-hidden="true">
-        <p>He&#039;s almost always in stone, almost always in this kind of compact form, and he represents an old man. You can see the sunken, wrinkled cheeks, kind of protruding jaw with the teeth, and hunched over body.</p>
+        <p>Casi siempre es de piedra, y casi siempre en esta postura de forma compacta, y representa a un anciano. Se pueden ver las mejillas hundidas, la mandíbula protuberante con dientes y el cuerpo encorvado. </p>
     </div>
 </div>
 
@@ -4604,7 +4604,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><strong><span class="wysiwyg-enlarged">Other deities in Teotihuacan include the Storm God and the Maize God.</span> </strong>The Teotihuacan<span class="wysiwyg-enlarged"> Storm God</span> is identified by arching eyebrows or goggled eyes, a curved upper lip, and aggressive fangs. This Storm God also holds a lightning scepter in his right hand, referencing fire and violent storms. Teotihuacan is located in a relatively dry region that gets little rainfall outside of the rainy season that lasts from June to October. Agricultural land was created and maintained by modifying and diverting the natural springs and rivers that ran through the city. Still, agricultural productivity relied on favorable weather and therefore on appeasing the Storm God. Many ceramic vessels depicting the Storm God have been found at Teotihuacan, as well as images on murals of elite figures dressed as Storm God impersonators.</p></div>
+            <div><p><span class="wysiwyg-enlarged">Otras deidades en Teotihuacan: El Dios de las Tormentas y el Dios del Maíz</span>. <span class="wysiwyg-enlarged">El Dios de las Tormentas</span> Teotihuacano es representado con cejas arqueadas o anteojeras, un labio superior curvo y colmillos agresivos. Este dios también porta un cetro de rayo en la mano derecha en referencia al fuego y a las tormentas violentas. Teotihuacan está en una zona relativamente árida que recibe poca lluvia fuera de la temporada de junio a octubre. La tierra agrícola se creaba y se mantenía por medio de la modificación y reencauza de los manantiales y los ríos que fluían por la ciudad. Aun así, la productividad de la tierra dependía del clima favorable y, por lo tanto, del apaciguamiento del Dios de las Tormentas. Se han encontrado en Teotihuacan muchas vasijas de cerámica con la imagen del Dios de las Tormentas, así como imágenes en los murales de personajes de la élite ataviados como el Dios de la Lluvia.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -4647,7 +4647,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/16_Storm-God-50_cutout_V2_0.png" alt="Storm God Vessel, 150–250" />
+  <img data-src="../../sites/default/files/2017-09/16_Storm-God-50_cutout_V2_0.png" alt="Storm God Vessel, 150–250" />
   
 
 <!-- THEME DEBUG -->
@@ -4765,7 +4765,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/19_mask-33_cutout_V2.png" alt="Mask, 300–600. Listwanite (serpentinite)" />
+  <img data-src="../../sites/default/files/2017-09/19_mask-33_cutout_V2.png" alt="Mask, 300–600. Listwanite (serpentinite)" />
   
 
 <!-- THEME DEBUG -->
@@ -4878,7 +4878,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Images of <span class="wysiwyg-enlarged">maize gods</span> are familiar among most ancient Mesoamerican cultures but have been curiously absent from Teotihuacan. New research suggests that the many enigmatic stone masks found around Teotihuacan depicting an idealized man’s face may, in fact, represent the Maize God. This would accord with the deity’s depiction throughout much of Mesoamerica as a physically pristine youthful male. Many stone faces have been found along the Street of the Dead, indicating their importance to elite ritual, but their exact use is unknown. More than 500 similar masks have been identified to date, approximately three dozen of which have archaeological contexts within the city itself.</p></div>
+            <div><p>En la mayoría de las antiguas culturas de Mesoamérica se encuentran las familiares imágenes de los <span class="wysiwyg-enlarged">dioses del maíz</span>, pero, curiosamente, faltan en Teotihuacan. Resultados recientes de investigaciones sugieren que las numerosas y enigmáticas máscaras de piedra dispersas en Teotihuacan con una cara masculina idealizada podrían, de hecho, representar al Dios del Maíz. Esto coincidiría con las imágenes de esta deidad como un hombre joven físicamente prístino encontradas en gran parte de Mesoamérica. Se han hallado muchas caras de piedra a lo largo de la Calzada de los Muertos, indicando su importancia en los ritos de la élite, pero se desconoce el uso exacto de ellas. Más de 500 máscaras similares se han identificado a la fecha, incluyendo alrededor de tres docenas teniendo contexto arqueológico propio dentro de la ciudad misma.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -4939,7 +4939,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/18a_storm_49.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/18a_storm_49.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -4990,7 +4990,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-09/20a_mask-32.jpg" alt="" />
+        <img src="../../sites/default/files/2017-09/20a_mask-32.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -5041,7 +5041,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-09/20b_mask-34.jpg" alt="" />
+        <img src="../../sites/default/files/2017-09/20b_mask-34.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -5092,7 +5092,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-08/18b_storm-50.jpg" alt="" />
+        <img src="../../sites/default/files/2017-08/18b_storm-50.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -5143,7 +5143,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-slide.html.twig' -->
 <figure>
                                     <div class="figure__wrapper ">
-        <img src="../sites/default/files/2017-09/20c_mask-35.jpg" alt="" />
+        <img src="../../sites/default/files/2017-09/20c_mask-35.jpg" alt="" />
     </div>
     
             <div class="figcaption__wrapper animated delay-1000">
@@ -5187,12 +5187,12 @@
   </ul>
   <div class="horizontal-slider-controls">
     <div class="horizontal-slider-controls-direction">
-      <a class="horizontal-slider-prev" href="3.html#">
+      <a class="horizontal-slider-prev" href="teo.html#">
         <span class="icon--med">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.12 27"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><polygon points="7.6 12.69 13.7 6.38 13.7 0.08 1.51 12.69 13.7 25.31 13.7 19 7.6 12.69"/><path class="cls-2" d="M9.57,12.69l5.15-5.33.4-.41V.08M.49,13.68l4.1,4.24,8.09,8.38"/></svg>
 </span>
       </a>
-      <a class="horizontal-slider-next" href="3.html#">
+      <a class="horizontal-slider-next" href="teo.html#">
         <span class="icon--med">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.61 27"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><polygon points="9.03 13.5 2.91 19.83 2.91 26.17 15.15 13.5 2.91 0.83 2.91 7.17 9.03 13.5"/><path class="cls-2" d="M6.39,24.61l9.77-10.12,1-1h0l-1-1M1.49.83V7.74l.4.41L7.06,13.5,4.64,16"/></svg>
 </span>
@@ -5245,7 +5245,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-08/SFAM-Teo-Pyramid-Infographic-04-gods.png" alt="Teotihuacan Gods" />
+  <img data-src="../../sites/default/files/2017-08/SFAM-Teo-Pyramid-Infographic-04-gods.png" alt="Teotihuacan Gods" />
   
 </figure>
 
@@ -5278,7 +5278,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#the-sun-pyramid"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#la-pirmide-del-sol"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -5303,13 +5303,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="apartment-compounds">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="complejos-habitacionales">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/21_apartment-compound.jpg" style="background-position-y: middle;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/21_apartment-compound.jpg" style="background-position-y: middle;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">Apartment Compounds</h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">Complejos Habitacionales</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -5447,7 +5447,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Outside of the ceremonial core, a large portion of Teotihuacan consisted of architecturally similar apartment complexes</span> that were built in a gridlike layout. These apartments were occupied by extended family groups often specializing in specific craft production—obsidian or ceramics, for example. Although we do not know the dominant language spoken by Teotihuacanos, we do know that the city was home to a variety of ethnic groups from different parts of Mesoamerica who spoke multiple languages; some resided in ethnic enclaves, where they carried out some of the cultural practices of their homelands.</p></div>
+            <div><p><span class="wysiwyg-enlarged">Fuera del centro ceremonial, gran parte de Teotihuacan consistía en complejos habitacionales arquitectónicamente similares,</span> construidos en un plan reticular. Los ocupaban grupos de familias extendidas, quienes a menudo se dedicaban a la producción de determinada artesanía — obsidiana o cerámica, — por ejemplo. Aunque no conocemos el idioma dominante que hablaban los teotihuacanos, sabemos que diversos grupos étnicos de diferentes áreas de Mesoamérica vivían allí y hablaban múltiples idiomas. Algunos vivían en enclaves étnicos, donde llevaban a cabo algunas de las prácticas culturales de su tierra de origen.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -5469,7 +5469,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--audio-component.html.twig' -->
 <div class="js-audio__wrapper audio__wrapper">
     <audio class="js-audio__source">
-        <source src="../sites/default/files/2017-09/3_audio_Manzanilla.mp3" type="audio/mpeg">
+        <source src="../../sites/default/files/2017-09/3_audio_Manzanilla_Spn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -5496,7 +5496,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div>Hear from Linda Manzanilla, Archaeologist</div>
+            <div>Para escuchar a Linda Manzanila, Arqueóloga</div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -5506,7 +5506,7 @@
 <div class="audio-transcript">
     <button class="audio-transcript--trigger js-audio-transcript--trigger">Audio Transcript</button>
     <div class="audio-transcript__drawer js-audio-transcript--hidden" aria-hidden="true">
-        <p>You could see in the teeth the isotopic mark of the place of origin of the person, because the enamel of the teeth blocks any change in that isotopic rate. So you have altitude and geology to know the region from which they came from. So when you compare the molar with the femur, you have the place of origin and the place of death. </p>
+        <p>Se puede notar en los dientes la marca isotópica del lugar de origen de la persona, porque el esmalte dental bloquea cualquier cambio en la tasa isotópica. Entonces se tiene la altura y la geología que indican la región de origen. Cuando se compara la muela con el fémur, se obtiene tanto el lugar de nacimiento como el lugar de la muerte.</p>
     </div>
 </div>
 
@@ -5547,7 +5547,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/5_infographic.png" alt="Teotihucan Apartment Compounds" />
+  <img data-src="../../sites/default/files/2017-09/5_infographic.png" alt="Teotihucan Apartment Compounds" />
   
 </figure>
 
@@ -5607,7 +5607,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-08/22_apt-mural_20.3-Techinantitla-mural_FAMSF_Sugiyama_Millon.jpg" alt="Techinantitla Mural, North Wall" />
+  <img data-src="../../sites/default/files/2017-08/22_apt-mural_20.3-Techinantitla-mural_FAMSF_Sugiyama_Millon.jpg" alt="Techinantitla Mural, North Wall" />
   
 
 <!-- THEME DEBUG -->
@@ -5720,7 +5720,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>It is estimated that there were around 2,000 apartment compounds throughout Teotihuacan, ranging in physical size and level of decoration. In many cases the walls of these apartments were decorated with elaborate mural paintings. The murals have survived the centuries because they were painted directly into the plaster covering the walls when it was still wet, creating an extremely durable surface. But as the upper walls crumbled, only the paintings on the lower registers survived, leaving us with only a glimpse of what they once were.</p></div>
+            <div><p>Se estima que en toda el área de Teotihuacan había unos 2,000 complejos habitacionales de diversos tamaños y nivel de decoración. En muchos casos las paredes del departamento ostentaban murales muy elaborados que han sobrevivido por siglos porque fueron pintados directamente en el yeso húmedo que recubría la pared, creando una superficie extremadamente durable. Al desintegrarse los muros superiores, sólo las pinturas en los pisos inferiores sobrevivieron, dejándonos sólo un vistazo de lo que alguna vez fueron.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -5783,8 +5783,8 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--overlay-image.html.twig' -->
 <figure class="js-overlay-container">
     <div class="figure__wrapper">
-        <img data-src="/sites/default/files/2017-08/23_Tassel-Headdress-Mural-Fragment_cutout_0.png" alt="Tassel Headdress Mural Fragment (Talon Glyph), 500–550" />
-        <img class="figure__overlay js-overlay-image js-overlay-image--hidden" src="../sites/default/files/2017-08/24_overlay_2.png" alt="Tassel Headdress Mural Fragment (Talon Glyph) drawing" />
+        <img data-src="../../sites/default/files/2017-08/23_Tassel-Headdress-Mural-Fragment_cutout_0.png" alt="Tassel Headdress Mural Fragment (Talon Glyph), 500–550" />
+        <img class="figure__overlay js-overlay-image js-overlay-image--hidden" src="../../sites/default/files/2017-08/24_overlay_2.png" alt="Tassel Headdress Mural Fragment (Talon Glyph) drawing" />
     </div>
    
 
@@ -5845,10 +5845,10 @@
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-    <button class="button-with-icon js-overlay-button figure__overlay-cta" data-text-collapsed="Look Closer" data-text-expanded="Hide Overlay">
+    <button class="button-with-icon js-overlay-button figure__overlay-cta" data-text-collapsed="Mira de Cerca" data-text-expanded="Ocultar">
         <i class="icon--small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.45 18"><defs><style>.cls-2{fill:none;stroke-miterlimit:10;stroke-width:1px;}</style></defs><path d="M10,7a5.76,5.76,0,1,0,6.66-5.69q-.56-.05-1.14-.06A5.76,5.76,0,0,0,10,7Z"/><path d="M20.44,2.09a6.78,6.78,0,1,1-8.76-.5A14.08,14.08,0,0,0,2,8.66c4.4,8,13.18,7.45,13.18,7.45,5.89,0,11-3.06,13.18-7.45A13.74,13.74,0,0,0,20.44,2.09Z"/><path class="cls-2" d="M15.58-.87m13.83,9A15,15,0,0,0,20.83.93M2.43,5.73A13.2,13.2,0,0,0,.87,8.1l-.29.58.31.57c4.23,7.7,12.3,8.09,13.88,8.09h.41"/></svg>
 </i>
-        <div class="button-with-icon__text">Look Closer</div>
+        <div class="button-with-icon__text">Mira de Cerca</div>
     </button>
 </figure>
 
@@ -5903,7 +5903,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>The most elaborate murals were limited to the administrative centers and the apartments of the upper and middle classes. This mural comes from a compound of wealthy residents, and we can assume that the richly dressed figure in profile represents an elite member of Teotihuacan society. Archaeologists and art historians hypothesize that these elite figures played crucial leadership roles.</p></div>
+            <div><p>Los murales más elaborados eran exclusivamente para los centros administrativos y los departamentos de las clases alta y media. Este mural viene de un complejo de residentes ricos y podemos asumir que la figura opulentamente ataviada representa a un miembro de la élite de la sociedad teotihuacana. Los arqueólogos y los historiadores del arte postulan que estos miembros de la élite tenían roles de liderazgo decisivos.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -5979,9 +5979,9 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Read like a Teotihuacano.</span></p>
+            <div><p><span class="wysiwyg-enlarged">Leer como un Teotihuacano.</span></p>
 
-<p>Decoding the events depicted on these intricate murals requires close looking and patient viewing.</p></div>
+<p>La decodificación de los eventos representados en estos intricados murales requiere verlos de cerca y con paciencia.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -6003,9 +6003,9 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-zoomable-markers--default.html.twig' -->
 <figure class="figure__zoomable js-figure__zoomable" >
     <div class="figure__zoomable-boundary">
-        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="/sites/default/files/2017-08/25_drawing.png">
+        <div class="figure--wrapper figure__zoomable-child js-figure__zoomable-child" data-bg="../../sites/default/files/2017-08/25_drawing.png">
         </div>
-        <img style="visibility: hidden;" data-src="/sites/default/files/2017-08/25_drawing.png" alt="Tassel Headdress Mural Fragment (Talon Glyph) drawing" />
+        <img style="visibility: hidden;" data-src="../../sites/default/files/2017-08/25_drawing.png" alt="Tassel Headdress Mural Fragment (Talon Glyph) drawing" />
         
 
 <!-- THEME DEBUG -->
@@ -6021,7 +6021,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/field/field--paragraph--field-zoomable-area.html.twig' -->
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 40%; top: 30%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6054,14 +6054,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Headdress</span></p>
+            <div><p><span class="wysiwyg-enlarged">Tocado</span></p>
 
-<p>Many Teotihuacano elites are shown wearing headdresses that are topped with long feathers; although these are depicted in red, they represent the green feathers of the tropical bird called the quetzal. These feathers were valued for their iridescent, shiny green color and for their rarity; imported from the Maya regions of southern Mexico and Guatemala, nearly 600 miles away, they are emblematic of Teotihuacan’s far-reaching diplomatic and trade relationships. The headdress also contains tassels, projectile points, and round ornaments. These headdresses may have belonged to high-ranking individuals involved with diplomatic, military, and trade contacts in other parts of Mesoamerica.</p></div>
+<p>Muchos miembros de la élite teotihuacana aparecen con tocados coronados de plumas largas; aunque están pintadas con pintura roja, en realidad representan las plumas verdes del quetzal, un ave tropical. Valoradas por su brillante color iridiscente y por su rareza, las plumas del quetzal eran Importadas desde la zona maya en el sur de México y en Guatemala, a una distancia de casi 950 kilómetros (600 millas) y son muestra emblemática de las relaciones diplomáticas y comerciales de largo alcance de Teotihuacan. El tocado también luce borlas, puntas de proyectil y ornamentos redondos. Estos tocados pertenecerían a individuos de alcurnia involucrados con contactos diplomáticos, militares y comerciales en otras partes de Mesoamérica.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_A.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_A.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6071,7 +6071,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 70%; top: 30%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6104,14 +6104,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Speech Scrolls</span></p>
+            <div><p><span class="wysiwyg-enlarged">Volutas del Habla</span></p>
 
-<p>This speech scroll is probably an allusion to agricultural fertility, or to a “flowery” kind of speech.</p></div>
+<p>Esta voluta del habla probablemente alude a la fertilidad agrícola, o bien a un tipo de oratoria muy florida.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_B.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_B.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6121,7 +6121,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 45%; top: 60%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6154,14 +6154,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Incense</span></p>
+            <div><p><span class="wysiwyg-enlarged">Incienso</span></p>
 
-<p>The right hand holds an incense pouch. Archaeologists believe that burning incense played an important role in the city, and many elaborate incensarios (incense burners) have been found there.</p></div>
+<p>La mano derecha sostiene una bolsa de incienso. Los arqueólogos creen que la quema de incienso tenía un papel fundamental en la ciudad, donde se han encontrado muchos incensarios muy elaborados</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_C.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_C.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6171,7 +6171,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 60%; top: 60%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6204,14 +6204,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Blooming Flowers</span></p>
+            <div><p><span class="wysiwyg-enlarged">Flores Abiertas</span></p>
 
-<p>A stream that concludes in flowers flows from the left hand. It is likely a reference to the role of the elite in ensuring agricultural fertility.</p></div>
+<p>Desde la mano izquierda fluye un riachuelo que termina en flores. Es probable que se refiera al papel de la élite en asegurar la fertilidad agrícola.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_D.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_D.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6221,7 +6221,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 40%; top: 45%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6254,14 +6254,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Earflares and Goggled Eyes</span></p>
+            <div><p><span class="wysiwyg-enlarged">Orejeras y Anteojeras</span></p>
 
-<p>The figure wears jade or greenstone earflares. Like the green feathers, these would have been precious, exotic objects. Throughout history, elites have worn luxury items as a visual display of their high status. The round rim surrounding the figure’s eye perhaps depicts an object made of shell; it is most likely a reference to the Storm God and his characteristic goggled eyes.</p></div>
+<p>Esta figura lleva orejeras de jade o piedra verde. Tanto como las plumas verdes, éstas hubieran sido objetos preciosos y exóticos. A lo largo de la historia de múltiples culturas, las élites han portado objetos de lujo como una manifestación visual de su alcurnia. El borde redondo alrededor del ojo de la figura sería un objeto probablemente hecho de concha; posiblemente es un referente al Dios de las Tormentas y sus ojos característicos en forma de anteojera.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_E.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_E.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6271,7 +6271,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 65%; top: 85%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6304,14 +6304,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Footprints</span></p>
+            <div><p><span class="wysiwyg-enlarged">Huellas de Pie</span></p>
 
-<p>The elite figure marches on a band of footprints that most likely refers to the act of walking in individual and community processions, highlighting the importance of ritual. This figure is one of many from the same set of murals, all walking to the right as they make ceremonial offerings.</p></div>
+<p>Este miembro de la élite marcha sobre una hilera de huellas de pie que probablemente se refiere al acto de caminar en procesiones individuales y con la comunidad, destacando la importancia de lo ritual. Esta figura es una de muchas del mismo juego de murales, todos caminando hacia la derecha a llevar a cabo sus ofrendas ceremoniales.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_F.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_F.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6321,7 +6321,7 @@
     </div>
     <div class="zoom-group js-zoom-group">
         <div class="zoom-marker-outer js-zoom-marker-outer" style="position: absolute; left: 85%; top: 70%;">
-            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="3.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="zoom-marker-inner animated fadeInDownShort delay-1000 js-zoom-marker-inner" href="teo.html#" title="Click to zoom"><span class="icon--small"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <path d="M11.8,18H6.2v-6.2H0V6.2h6.2V0h5.6v6.2H18v5.6h-6.2V18z M8.2,16h1.6V9.8H16V8.2H9.8V2H8.2v6.2H2v1.6h6.2V16z"/>
 </svg>
@@ -6354,14 +6354,14 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>Glyph</p>
+            <div><p><span class="wysiwyg-enlarged">Glifo</span></p>
 
-<p>This glyphlike object is wearing a Tassel Headdress, including Storm God goggles and flames. A form of picture writing with glyphs that seem to represent things or places appears at Teotihuacan, but whether or not it represents a spoken language is still debated by scholars.</p></div>
+<p>Este objeto en forma de glifo lleva un tocado de borlas, incluyendo anteojeras del Dios de la Lluvia y llamas. Aparece en Teotihuacan una forma de pictografía con glifos que aparentemente representan cosas o lugares. El hecho de también representar un lenguaje hablado todavía es materia de debate entre los académicos.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
 
-          <img data-src="/sites/default/files/2017-08/25_drawing_Glyph.png" alt="" />
+          <img data-src="../../sites/default/files/2017-08/25_drawing_Glyph.png" alt="" />
     
 </div>
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--zoomable-area.html.twig' -->
@@ -6406,7 +6406,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#apartment-compounds"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#complejos-habitacionales"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -6431,13 +6431,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="the-great-fire-and-legacy">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="el-gran-fuego-y-la-herencia">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/27_View_South_Street_LG.png" style="background-position-y: middle;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/27_View_South_Street_LG.png" style="background-position-y: middle;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">The Great Fire and Legacy </h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">El Gran Fuego y la Herencia</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -6582,7 +6582,7 @@
 <!-- THEME HOOK: 'video_player_formatter' -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
 <video preload="auto"  style="" autoplay loop muted playsinline>
-            <source src="../sites/default/files/video-thumbnails/2017-08/5&#32;_Video_standing&#32;figure_0.mp4"/>
+            <source src="../../sites/default/files/video-thumbnails/2017-08/5&#32;_Video_standing&#32;figure_0.mp4"/>
     </video>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
@@ -6705,7 +6705,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><span class="wysiwyg-enlarged">Several sculptures from Teotihuacan, including this marble figure, exhibit evidence of violent destruction relating to a great fire that marked the city’s demise. </span>Around 550 CE, the ceremonial center was burned and ritual objects were intentionally smashed and scattered in acts meant to divest them of their ritual power. Teotihuacan’s demise may have resulted from environmental difficulties or from political unrest and societal tensions rooted in the migrations into the Valley of Mexico. Whatever the cause, the systems of urban and religious maintenance devised by the Teotihuacan rulers that had succeeded for over 400 years fell apart, and Teotihuacan’s regional dominance ended.</p></div>
+            <div><p><span class="wysiwyg-enlarged">Varias esculturas de Teotihuacan, entre ellas, esta figura de mármol, exhiben evidencia de destrucción violenta con relación a un incendio que marcó el fin de la ciudad.</span> Alrededor de 550 EC el centro ceremonial fue quemado y los objetos rituales fueron rotos y dispersados—actos cuya intención era despojarlos de su poder ritual. La muerte de Teotihuacan puede haber resultado de dificultades del medioambiente o del malestar político y las tensiones sociales basadas en las migraciones hacia el Valle de México. Comoquiera que fuere, los sistemas de sostenimiento urbano y religioso determinados por los gobernantes teotihuacanos que habían funcionado exitosamente durante más de 400 años se vinieron abajo, y el dominio regional de Teotihuacan concluyó.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -6727,7 +6727,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--audio-component.html.twig' -->
 <div class="js-audio__wrapper audio__wrapper">
     <audio class="js-audio__source">
-        <source src="../sites/default/files/2017-09/4_audio_Manzanilla.mp3" type="audio/mpeg">
+        <source src="../../sites/default/files/2017-09/4_audio_Manzanilla_Spn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -6754,7 +6754,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div>Listen to Linda Manzanilla, Archaeologist</div>
+            <div>Para escuchar a Linda Manzanilla, Arqueóloga</div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -6764,7 +6764,7 @@
 <div class="audio-transcript">
     <button class="audio-transcript--trigger js-audio-transcript--trigger">Audio Transcript</button>
     <div class="audio-transcript__drawer js-audio-transcript--hidden" aria-hidden="true">
-        <p>We found this sculpture, but shattered in more than 80 pieces. There is no hint of any invasion of foreign people towards the site. But what we see is that all of the scenarios of the ruling elite were burnt and destroyed. </p>
+        <p>Encontramos esta escultura, pero quebrada en más de 80 piezas. No hay indicios de invasión extranjera en el sitio. Pero lo que vemos es que todos los escenarios de la élite gobernante fueron quemados y destruidos.</p>
     </div>
 </div>
 
@@ -6824,7 +6824,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/infographic%206.png" alt="Population of Teotihuacan over time" />
+  <img data-src="../../sites/default/files/2017-09/infographic%206.png" alt="Population of Teotihuacan over time" />
   
 </figure>
 
@@ -6898,7 +6898,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p>To the Aztecs, who came to prominence almost 900 years after the fall of Teotihuacan, the ancient city was considered the place where the gods brought the world into existence. They gave it the name we use today, also naming the Sun and Moon Pyramids and the Street of the Dead. The city’s monuments have been central to Mexican national identity ever since the beginnings of archaeology in the late 19th century. As an ancient ruin, Teotihuacan is one of the most visited archaeological sites in the world, welcoming millions of visitors a year. As it did in antiquity, Teotihuacan’s scale and planning continue to inspire awe in modern visitors and scholars. It is simultaneously a place that a modern city-dweller would instantly recognize as an urban environment and a place that reflects the intentions of its creators to build a mirror of the cosmos.</p></div>
+            <div><p>Para los aztecas, quienes llegaron a la prominencia casi 900 años después de la caída de Teotihuacan, la antigua ciudad era considerada el lugar donde los dioses le dieron existencia al mundo. Le dieron el nombre que usamos hoy, también nombrando a las Pirámides del Sol y de la Luna y a la Calzada de los Muertos. Los monumentos de la ciudad han tenido un papel central en la identidad nacional mexicana desde los comienzos de la arqueología a fines del siglo XIX. Como una ruina antigua, Teotihuacan es uno de los sitios arqueológicos más visitados del mundo, dándole la bienvenida a millones de visitantes cada año. Como lo hizo en la antigüedad, la escala y planificación de Teotihuacan continúan inspirando admiración tanto en visitantes como en académicos contemporáneos. Es a la vez un lugar que un habitante de una ciudad moderna reconoce instantáneamente como un ambiente urbano y un lugar que refleja la intención de sus creadores de construir un espejo del cosmos.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -6920,7 +6920,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--audio-component.html.twig' -->
 <div class="js-audio__wrapper audio__wrapper">
     <audio class="js-audio__source">
-        <source src="../sites/default/files/2017-09/5_audio_Hrurshowy.mp3" type="audio/mpeg">
+        <source src="../../sites/default/files/2017-09/5_audio_Hrushowy_Spn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
@@ -6947,7 +6947,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div>Listen to Neil Hrurshowy, lead designer for the city of San Francisco</div>
+            <div>Para escuchar a Neil Hrurshowy, diseñador en jefe de la Ciudad de San Francisco</div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -6957,7 +6957,7 @@
 <div class="audio-transcript">
     <button class="audio-transcript--trigger js-audio-transcript--trigger">Audio Transcript</button>
     <div class="audio-transcript__drawer js-audio-transcript--hidden" aria-hidden="true">
-        <p>I would encourage people to think of cities as a far more complex organism than just the physical things that we can uncover. What makes cities run are people. If you think about the incredibleness of so many people living in close proximity with each other, I think cities are our most incredible invention as far as the human species.</p>
+        <p>Aliento a la gente a pensar en que las ciudades son un organismo mucho más complejo de lo que podemos descubrir sólo con las cosas físicas. Lo que hace a las ciudades funcionar son las personas. Si piensan en lo increíble que es que tanta gente viva con tal proximidad unos de otros, yo creo que las ciudades son la invención más increíble de la especie humana.</p>
     </div>
 </div>
 
@@ -7019,7 +7019,7 @@
 <!-- THEME HOOK: 'video_player_formatter' -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
 <video preload="auto"  style="" autoplay loop muted playsinline>
-            <source src="../sites/default/files/video-thumbnails/2017-09/Video&#32;6&#32;legacy_600_F_0.mp4"/>
+            <source src="../../sites/default/files/video-thumbnails/2017-09/Video&#32;6&#32;legacy_600_F_0.mp4"/>
     </video>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/video-player-formatter.html.twig' -->
@@ -7120,7 +7120,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#the-great-fire-and-legacy"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#el-gran-fuego-y-la-herencia"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -7145,13 +7145,13 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--card-section.html.twig' -->
 
-<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="teotihuacan-in-san-francisco">
+<section class="js-section pp-scrollable paragraph paragraph--type--card-section paragraph--view-mode--default" id="teotihuacan-en-san-francisco">
     
                 <div class="section-hero">
-            <div class="section-hero__wrapper " data-bg="/sites/default/files/2017-09/Final_section_header.jpg" style="background-position-y: middle;">
+            <div class="section-hero__wrapper " data-bg="../../sites/default/files/2017-09/Final_section_header.jpg" style="background-position-y: middle;">
                 <div class="section-hero__title--bold animated bottom-left has-bold-outlined ">
                                         <div class="delay-2500 animated animated-border--top"></div>
-                                        <h1 class="animated delay-1250 js-section-hero--get_height">Teotihuacan in San Francisco</h1>
+                                        <h1 class="animated delay-1250 js-section-hero--get_height">Teotihuacan en San Francisco</h1>
                                                                 <div class="delay-2500 animated animated-border--bottom"></div>
                                     </div>
             </div>
@@ -7228,7 +7228,7 @@
 -->
 <!-- BEGIN OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
-            <div><p><strong><span class="wysiwyg-enlarged">Though the state of Teotihuacan collapsed nearly 1,500 years ago, the legacy of the ancient city is still alive today.</span> </strong>In San Francisco’s Mission District, images of the Feathered Serpent twist and turn over storefronts and throughout alleyways. In Teotihuacan, the symbol of the Feathered Serpent was part of an iconography reflecting a common culture and belief system that united diverse populations and contributed to a shared urban identity. The tradition continues: the art of Teotihuacan, now a symbol of Mesoamerican history and culture, contributes to the multiculturalism that San Francisco celebrates.</p></div>
+            <div><p><span class="wysiwyg-enlarged">A pesar de que el estado de Teotihuacán colapsó casi 1500 años atrás, el legado de esta antigua ciudad sigue vivo hoy en día.</span> En el Mission District de San Francisco, imágenes de la Serpiente Emplumada se contornean sobre fachadas de tiendas y callejones. En Teotihuacan, el símbolo de la Serpiente Emplumada representa una cultura y sistema de creencia común que unió a las diversas poblaciones inmigrantes y contribuyó a una identidad compartida. La tradición continúa: el arte de Teotihuacan, ahora un símbolo de la historia y cultura mesoamericana, contribuye al multiculturalismo que celebra San Francisco.</p></div>
       
 <!-- END OUTPUT from 'core/themes/stable/templates/field/field.html.twig' -->
 
@@ -7290,7 +7290,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/052_deYoung082117-Murals_AndriaLo_1.jpg" alt="24th and Harrison" />
+  <img data-src="../../sites/default/files/2017-09/052_deYoung082117-Murals_AndriaLo_1.jpg" alt="24th and Harrison" />
   
 
 <!-- THEME DEBUG -->
@@ -7408,7 +7408,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/090_deYoung082117-Murals_AndriaLo_2.jpg" alt="Ralph Maradiaga Mini-Park, 24th &amp; York" />
+  <img data-src="../../sites/default/files/2017-09/090_deYoung082117-Murals_AndriaLo_2.jpg" alt="Ralph Maradiaga Mini-Park, 24th &amp; York" />
   
 
 <!-- THEME DEBUG -->
@@ -7526,7 +7526,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/036_deYoung082117-Murals_AndriaLo_3.jpg" alt="24th and Capp" />
+  <img data-src="../../sites/default/files/2017-09/036_deYoung082117-Murals_AndriaLo_3.jpg" alt="24th and Capp" />
   
 
 <!-- THEME DEBUG -->
@@ -7644,7 +7644,7 @@
 -->
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--image-with-revealable-caption.html.twig' -->
 <figure>
-  <img data-src="/sites/default/files/2017-09/121_deYoung082117-Murals_AndriaLo_4.jpg" alt="Balmy Alley, mid-block" />
+  <img data-src="../../sites/default/files/2017-09/121_deYoung082117-Murals_AndriaLo_4.jpg" alt="Balmy Alley, mid-block" />
   
 
 <!-- THEME DEBUG -->
@@ -7735,7 +7735,7 @@
                 <div>share</div>
             </button>
             <div class="share-expander js-share-expander js-share-expander--is-closed">
-                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/teo#teotihuacan-in-san-francisco"></div>
+                <div class="addthis_inline_share_toolbox" data-url="https://digitalstories.famsf.org/es/teo#teotihuacan-en-san-francisco"></div>
             </div>
         </div>
         <button class="js-next-page next-page animated delay-100">
@@ -7752,11 +7752,11 @@
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/field/field--field-section.html.twig' -->
 
 
-    <section class="js-section pp-scrollable footer" id="additional-information">
+    <section class="js-section pp-scrollable footer" id="informacin-adicional">
         <footer class="card-section">
             <div class="container">
                 <div class="l-1up">
-                    <h2>Additional Information</h2>
+                    <h2>Información Adicional</h2>
                 </div>
             </div>
             <div class="container">
@@ -7789,7 +7789,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://tickets.famsf.org/events/283/detail/59519d92f71d1a0fd5182415 ">
-        <img data-src="/sites/default/files/2017-09/FOOTER_DY_General.jpg" alt="Buy Member tickets to the exhibition Teotihuacan at the de Young Museum" />
+        <img data-src="../../sites/default/files/2017-09/FOOTER_DY_General.jpg" alt="Buy Member tickets to the exhibition Teotihuacan at the de Young Museum" />
     </a>
     <h3 class="footer-section__title">
 
@@ -7850,7 +7850,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://tickets.famsf.org/events/283/detail/5951a497f71d1a0fd518241c ">
-        <img data-src="/sites/default/files/2017-09/FOOTER_Visit_2.jpg" alt="Buy tickets to the exhibition Teotihuacan at the de Young Museum" />
+        <img data-src="../../sites/default/files/2017-09/FOOTER_Visit_2.jpg" alt="Buy tickets to the exhibition Teotihuacan at the de Young Museum" />
     </a>
     <h3 class="footer-section__title">
 
@@ -7911,7 +7911,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://deyoung.famsf.org/exhibitions/teotihuacan-city-water-city-fire ">
-        <img data-src="/sites/default/files/2017-09/FOOTER_Teo.jpg" alt="Learn more about the exhibition Teotihuacan at the de Young" />
+        <img data-src="../../sites/default/files/2017-09/FOOTER_Teo.jpg" alt="Learn more about the exhibition Teotihuacan at the de Young" />
     </a>
     <h3 class="footer-section__title">
 
@@ -7972,7 +7972,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://deyoung.famsf.org/deyoung/visiting/tours-0 ">
-        <img data-src="/sites/default/files/2017-08/FOOTER_Audio_2.jpg" alt="Teotihuacan exhibition audio tour" />
+        <img data-src="../../sites/default/files/2017-08/FOOTER_Audio_2.jpg" alt="Teotihuacan exhibition audio tour" />
     </a>
     <h3 class="footer-section__title">
 
@@ -8033,7 +8033,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://deyoung.famsf.org/visit-us">
-        <img data-src="/sites/default/files/2017-09/FOOTER_DY_Cafe.jpg" alt="Plan Your Visit to the exhibition Teotihuacan at the de Young museum" />
+        <img data-src="../../sites/default/files/2017-09/FOOTER_DY_Cafe.jpg" alt="Plan Your Visit to the exhibition Teotihuacan at the de Young museum" />
     </a>
     <h3 class="footer-section__title">
 
@@ -8094,7 +8094,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://deyoung.famsf.org/join">
-        <img data-src="/sites/default/files/2017-08/FOOOTER_Member.jpg" alt="Become a Member at the de Young museum" />
+        <img data-src="../../sites/default/files/2017-08/FOOOTER_Member.jpg" alt="Become a Member at the de Young museum" />
     </a>
     <h3 class="footer-section__title">
 
@@ -8155,7 +8155,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="http://famsf.us4.list-manage1.com/subscribe?u=d7a49f337e55b897015517194&amp;id=9757c5111b">
-        <img data-src="/sites/default/files/2017-08/FOOTER_DY_Member_1.jpg" alt="Sign up for the de Young newsletter" />
+        <img data-src="../../sites/default/files/2017-08/FOOTER_DY_Member_1.jpg" alt="Sign up for the de Young newsletter" />
     </a>
     <h3 class="footer-section__title">
 
@@ -8216,7 +8216,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://deyoung.famsf.org/digital-stories">
-        <img data-src="/sites/default/files/2017-08/FOOTER_DS.jpg" alt="de Young museum exhibition Digital Stories" />
+        <img data-src="../../sites/default/files/2017-08/FOOTER_DS.jpg" alt="de Young museum exhibition Digital Stories" />
     </a>
     <h3 class="footer-section__title">
 
@@ -8277,7 +8277,7 @@
 <!-- BEGIN OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/paragraph/paragraph--footer-feature.html.twig' -->
 <article class="footer-section">
     <a href="https://twitter.com/hashtag/TeotihuacanNow">
-        <img data-src="/sites/default/files/2017-11/teotihuacan-social-media.jpg" alt="Teotihuacan exhibition de Young social media" />
+        <img data-src="../../sites/default/files/2017-11/teotihuacan-social-media_0.jpg" alt="Teotihuacan exhibition de Young social media" />
     </a>
     <h3 class="footer-section__title">
 
@@ -8432,11 +8432,11 @@
 
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/3","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"2294c41949c81cc2aff4f78e4b608409fc4633664818e53d5251753827dba1ac"}}</script>
-<script src="../sites/default/files/js/js_VZraF4pcKoby-WaHXpdb8EI8G-DBo2GNvVlpFYQj02U.js"></script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"es\/","currentPath":"node\/3","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"es"},"pluralDelimiter":"\u0003","user":{"uid":0,"permissionsHash":"2294c41949c81cc2aff4f78e4b608409fc4633664818e53d5251753827dba1ac"}}</script>
+<script src="../../sites/default/files/js/js_VZraF4pcKoby-WaHXpdb8EI8G-DBo2GNvVlpFYQj02U.js"></script>
 
         <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-589e4e5bad8f4e9a"></script>
-      <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e9bd0d84cd","applicationID":"48056503","transactionName":"MwcDMUsCDRAABUZaXgpNIAZNCgwNThZTVFQ7AQAGUQY=","queueTime":0,"applicationTime":57,"atts":"H0AARwMYHh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+      <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e9bd0d84cd","applicationID":"48056503","transactionName":"MwcDMUsCDRAABUZaXgpNIAZNCgwNThZTVFQ7AQAGUQY=","queueTime":0,"applicationTime":39,"atts":"H0AARwMYHh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 
 <!-- END OUTPUT from 'themes/custom/famsf_digital_stories_theme/templates/html.html.twig' -->
